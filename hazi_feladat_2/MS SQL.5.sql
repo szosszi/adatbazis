@@ -1,0 +1,6 @@
+CREATE USER Test WITHOUT Login;
+GRANT SELECT ON Ugyfel TO Test
+
+EXECUTE AS User= 'Test';
+SELECT * FROM Ugyfel
+REVERT
